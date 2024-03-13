@@ -3,7 +3,7 @@ const { lightningChart, PointShape, Themes } = lcjs
 
 const chart = lightningChart()
     .Chart3D({
-        // theme: Themes.darkGold
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Bubble Chart with 4 KPIs and data grouping')
 

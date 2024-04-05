@@ -1,7 +1,9 @@
 const lcjs = require('@arction/lcjs')
 const { lightningChart, PointShape, Themes } = lcjs
 
-const chart = lightningChart()
+const chart = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        })
     .Chart3D({
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })

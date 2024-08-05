@@ -1,4 +1,4 @@
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 const { lightningChart, PointShape, Themes } = lcjs
 
 const chart = lightningChart({

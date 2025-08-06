@@ -47,5 +47,3 @@ const groupsSeries = groupsData.map((data, i) => {
 chart.getDefaultAxisX().setTitle('KPI X').fit(false)
 chart.getDefaultAxisY().setTitle('KPI Y').fit(false)
 chart.getDefaultAxisZ().setTitle('KPI Z').fit(false)
-
-const legend = chart.addLegendBox().add(chart)

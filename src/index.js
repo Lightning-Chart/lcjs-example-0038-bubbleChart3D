@@ -41,11 +41,9 @@ const groupsData = new Array(3).fill(0).map((_) => {
 
 const groupsSeries = groupsData.map((data, i) => {
     const pointSeries = chart
-        .addPointSeries({
-            individualPointSizeEnabled: true,
-        })
+        .addPointSeries()
         .setName(`Group ${i + 1}`)
-        .add(data)
+        .appendJSON(data)
     return pointSeries
 })
 
